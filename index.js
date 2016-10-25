@@ -42,8 +42,9 @@ Meteor.Collection.prototype.attachCollectionFieldHistory = function (opts) {
   attachCollectionFieldHistory(this, opts)
 };
 
-function getHistoryOfField(object, field, historyField = CollectionFieldHistory.field) {
-  let history = object[historyField];
+function getHistoryOfField(object, field, historyField) {
+  historyField = historyField || CollectionFieldHistory.field;
+  var history = object[historyField];
   return history.filter(item => item[field]);
 }
 exports.attachCollectionFieldHistory = attachCollectionFieldHistory;
