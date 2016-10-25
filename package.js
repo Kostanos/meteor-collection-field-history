@@ -1,6 +1,6 @@
 Package.describe({
   name: 'kostanos:meteor-collection-field-history',
-  version: '1.0.1',
+  version: '1.0.2',
   summary: 'Save history of chosen fields on selected collections',
   git: 'https://github.com/Kostanos/meteor-collection-field-history.git',
   documentation: 'README.md'
